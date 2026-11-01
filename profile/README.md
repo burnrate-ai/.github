@@ -8,6 +8,8 @@ Agents now hold your API keys and your wallet. Burnrate puts the limits **outsid
 | **Burnrate Gateway** | OpenAI-compatible proxy: every agent gets its own key, USD budget and rate limit | private beta |
 | **Burnrate Vault** | policy vault for AI trading agents on Solana: an AI risk oracle scores the token, the vault refuses the swap | [solana-scam-check](https://github.com/burnrate-ai/solana-scam-check) |
 
+**Proof — Burnrate Shield (program risk):** our Solana/Anchor pipeline found two real vulnerabilities in live programs. The one filed to Immunefi — a claim-frequency over-mint in GMX-Solana's liquidity-provider program — reproduced as a working PoC that over-mints by **56.9%**, and Immunefi confirmed it a valid finding (a duplicate, so no payout). A reproduced exploit, not a model's guess — the signal the vault trusts.
+
 ```
 /plugin marketplace add burnrate-ai/burnrate
 /plugin install burnrate@burnrate
